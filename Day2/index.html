@@ -62,10 +62,7 @@ Each course should include:
 -->
 
         <header>
-            <img
-                src="https://cdn-icons-png.flaticon.com/512/1261/1261009.png"
-                alt=""
-            />
+            <img src="images/COImg.jpg" alt="Logo" />
             <h1>Codding Academy</h1>
             <p>Welcome to our academy</p>
         </header>
@@ -88,35 +85,206 @@ Each course should include:
                 officia aliquam. Impedit in repellat voluptatum quod dolorem.
             </p>
         </main>
-        <section>
+        <section class="courses-wrapper">
             <!-- Course Image
 * Course Title
 * Short Description
 * Course Duration -->
             <article>
-                <img src="" alt="" />
-                <h2></h2>
-                <p></p>
-                <p></p>
+                <img src="images/html.png" alt="html" />
+                <h2>HTML</h2>
+                <p>
+                    HTML is the standard markup language for documents designed
+                    to be displayed in a web browser.
+                </p>
+                <p>Duration: 2 Months</p>
             </article>
             <article>
-                <img src="" alt="" />
-                <h2></h2>
-                <p></p>
-                <p></p>
+                <img src="images/css.png" alt="css" />
+                <h2>CSS</h2>
+                <p>
+                    CSS is a style sheet language used for describing the
+                    presentation of a document written in a markup language like
+                    HTML.
+                </p>
+                <p>Duration: 2 Months</p>
             </article>
             <article>
-                <img src="" alt="" />
-                <h2></h2>
-                <p></p>
-                <p></p>
+                <img src="images/js.png" alt="js" />
+                <h2>JS</h2>
+                <p>
+                    JS is a client-side scripting language used for dynamic and
+                    interactive web content.
+                </p>
+                <p>Duration: 3 Months</p>
             </article>
             <article>
-                <img src="" alt="" />
-                <h2></h2>
-                <p></p>
-                <p></p>
+                <img src="images/react.png" alt="react" />
+                <h2>React</h2>
+                <p>
+                    React is a JavaScript library for building user interfaces.
+                </p>
+                <p>Duration: 3 Months</p>
             </article>
+        </section>
+        <!-- ### 5. Registration Form
+
+Create a registration form containing:
+
+* Full Name
+* Email Address
+* Password
+* Confirm Password
+* Age
+* Phone Number
+* Gender (Radio Buttons)
+* Course Selection (Select Menu)
+* Previous Programming Experience (Radio Buttons)
+* Programming Languages (Checkboxes)
+* About Yourself (Textarea)
+* Upload CV (File Input)
+* Submit Button
+
+### 6. Form Validation
+
+Apply HTML validation using the appropriate attributes such as:
+
+* required
+* placeholder
+* minlength
+* maxlength
+* min
+* max
+ -->
+        <section class="registration-wrapper">
+            <h2>Registration Form</h2>
+            <form action="#">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    minlength="3"
+                    maxlength="50"
+                    required
+                />
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                />
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter your password"
+                    required
+                />
+                <label for="confirm-password">Confirm Password</label>
+                <input
+                    type="password"
+                    id="confirm-password"
+                    name="confirm-password"
+                    placeholder="Confirm your password"
+                    required
+                />
+                <label for="age">Age</label>
+                <input
+                    type="number"
+                    id="age"
+                    name="age"
+                    min="18"
+                    max="65"
+                    placeholder="Enter your age"
+                    required
+                />
+                <label for="phone">Phone Number</label>
+                <input
+                    type="number"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                />
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" />
+                <label for="female">Female</label>
+                <label for="course">Course Selection</label>
+                <select id="course" name="course">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JS</option>
+                    <option value="react">React</option>
+                </select>
+                <label for="experience">Previous Programming Experience</label>
+                <input type="radio" id="yes" name="experience" value="yes" />
+                <label for="yes">Yes</label>
+                <input type="radio" id="no" name="experience" value="no" />
+                <label for="no">No</label>
+                <label for="languages">Programming Languages</label>
+                <input
+                    type="checkbox"
+                    id="html"
+                    name="languages"
+                    value="html"
+                />
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="languages" value="css" />
+                <label for="css">CSS</label>
+                <input type="checkbox" id="js" name="languages" value="js" />
+                <label for="js">JS</label>
+                <input
+                    type="checkbox"
+                    id="react"
+                    name="languages"
+                    value="react"
+                />
+                <label for="react">React</label>
+                <label for="about">About Yourself</label>
+                <textarea id="about" name="about"></textarea>
+                <label for="cv">Upload CV</label>
+                <input type="file" id="cv" name="cv" />
+                <input type="submit" value="Submit" />
+            </form>
+        </section>
+        <!-- ### 7. Multimedia
+
+Add the following:
+
+* One Audio Player
+* One Video Player
+* One Embedded YouTube Video using <iframe>
+ -->
+        <section class="multimedia-wrapper">
+            <audio
+                src="https://open.spotify.com/embed/track/5lWSa1rmuSL6OBPOnkAqoa?utm_source=generator&si=9120afd344034e0f"
+                preload="auto"
+                controls
+            ></audio>
+            <video src="video.mp4" preload="auto" controls></video>
+            <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="YouTube video player"
+                frameborder="0"
+                allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                "
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+            ></iframe>
         </section>
         <footer>
             <p>
